@@ -78,4 +78,10 @@ Give a ⭐️ if you like this project!
 
 - Microverse.
 - Redux ToolKit Team
-- 
+
+## Resources 
+- https://app.sportdataapi.com/
+- https://www.nba.com/games?date=2022-06-16
+- https://rapidapi.com/api-sports/api/api-nba/
+- https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)
+- https://github.com/microverseinc/curriculum-react-redux/blob/main/capstone/react_capstone.md

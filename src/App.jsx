@@ -1,11 +1,14 @@
 import './assets/styles/App.scss'
+import { Outlet } from 'react-router-dom'
+import Navbar from './components/Navbar'
 
 const App= () => {
 
   return (
-    <div className="App">
-      hello
-    </div>
+    <main className="App">
+      <Navbar />
+      <Outlet/>
+    </main>
   )
 }
 

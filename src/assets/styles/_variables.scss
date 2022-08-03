@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&family=Lato:wght@300&display=swap');
 :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -13,5 +14,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+    --ff-duru-sans: 'Duru Sans', sans-serif;
+    --ff-lato: 'Lato', sans-serif;
   }
   
+  * {
+    margin: 0;
+    padding: 0;
+  }
