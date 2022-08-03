@@ -1,1 +1,12 @@
 @import "_variables";
+
+.card__container {
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    .card__logo {
+        width: 3rem;
+    }
+}

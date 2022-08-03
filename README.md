@@ -85,3 +85,4 @@ Give a ⭐️ if you like this project!
 - https://rapidapi.com/api-sports/api/api-nba/
 - https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)
 - https://github.com/microverseinc/curriculum-react-redux/blob/main/capstone/react_capstone.md
+- https://github.com/antfu/vite-plugin-pwa/blob/main/examples/react-router/vite.config.ts
