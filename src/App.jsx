@@ -1,10 +1,10 @@
-import './App.scss'
+import './assets/styles/App.scss'
 
-function App() {
+const App= () => {
 
   return (
     <div className="App">
-      
+      hello
     </div>
   )
 }
