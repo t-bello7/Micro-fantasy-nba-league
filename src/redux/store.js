@@ -1,10 +1,15 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import teamReducer from "./team/teamSlice";
 
-const store = configureStore({
-    reducer: {
-        teams: teamReducer,
-    }
-})
+const rootReducer = combineReducers({
+  teams: teamReducer,
+});
 
-export default store;
+export const setupStore = (preloadedState) => configureStore({
+  reducer: rootReducer,
+  preloadedState
+});
+
+export const store = configureStore({
+  reducer: rootReducer
+});
