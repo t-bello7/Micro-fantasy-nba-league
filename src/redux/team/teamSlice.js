@@ -12,12 +12,13 @@ const baseURL = 'https://***REMOVED***/';
 export const fetchTeams = createAsyncThunk(
   'team/fetchTeams',
   async () => {
+    console.log(`hello ${import.meta.env.VITE_XRapidAPIKey}`)
     const response = await axios.get(`${baseURL}teams`,
       {
         headers: {
           'Content-type': 'application/json',
-          'X-RapidAPI-Host': process.env.REACT_APP_XRapidAPIHost,
-          'X-RapidAPI-Key': process.env.REACT_APP_XRapidAPIKey
+          'X-RapidAPI-Host': import.meta.env.VITE_XRapidAPIHost,
+          'X-RapidAPI-Key': import.meta.env.VITE_XRapidAPIKey
         },
       });
     return response.data.response;
