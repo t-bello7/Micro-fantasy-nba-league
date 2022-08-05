@@ -1,4 +1,8 @@
+import { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux/es/exports'
 import "../assets/styles/Detail.scss"
+import { fetchTeamStatistics } from '../redux/team/teamSlice'
 
 const data = [
       {
@@ -31,9 +35,21 @@ const data = [
       }
 ]
 const Detail = () => {
+    const { dataStat: teamStat, status, error} = useSelector((store) => store.teams)
+    const dispatch = useDispatch();
+
+    const params  = useParams()
+    console.log(params)
+
+    useEffect(() => {
+  
+        dispatch(fetchTeamStatistics(params.name))
+      }, [params.name])
+  
     return (
         <main className="detail__container">
-             Detail 
+             <div>Games {teamStat.games} </div>
+             <div> Fast Break Points {teamStat.fastBreakPoints}</div>
         </main>
     )
 }

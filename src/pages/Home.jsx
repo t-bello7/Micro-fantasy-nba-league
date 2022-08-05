@@ -1427,17 +1427,20 @@ const Home = () => {
 
   teams = search(response)
   return (
-    <>
-      <input 
-          type="text"
-          placeholder="Search..."
-          onChange={(e) => setQuery(e.target.value)}
-        />
-      <main className='container home__container'>  
+    <main className='container home__container'>
+      <div>
+        <input 
+            type="text"
+            placeholder="Search..."
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <img src="/icon/search.svg" className='icon'/>
+        </div>
+      <div className='team__container'>  
       
-        {teams.map(item =>   <NavLink to={`/${item.nickname}`}  key={item.id}><Card logo={item.logo} name={item.name} />  </NavLink>)}
+        {teams.map(item =>   <NavLink to={`/${item.id}`}  key={item.id}><Card logo={item.logo} name={item.name} />  </NavLink>)}
+      </div>
       </main>
-      </>
   )
 }
 export default Home

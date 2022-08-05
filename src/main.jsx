@@ -9,7 +9,6 @@ import Detail from './pages/Detail'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
@@ -20,5 +19,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Routes>
       </BrowserRouter>
     </Provider>
-  </React.StrictMode>
 )

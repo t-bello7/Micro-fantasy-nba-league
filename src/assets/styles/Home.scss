@@ -2,9 +2,11 @@
 
 .home__container {
     padding-top: 3rem;
-    max-width: 100%;
-    background-color: #000;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    background-color: var(--clr-secondary);
+    .team__container {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
