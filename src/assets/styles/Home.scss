@@ -1,0 +1,41 @@
+@import "_variables";
+
+.home__container {
+  padding-top: 3rem;
+  height: 100vh;
+  background-color: var(--clr-secondary);
+
+  .search__container {
+    max-width: 50%;
+    margin: 2rem auto;
+    border: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.5rem;
+    background-color: #fff;
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      border: none;
+    }
+
+    input::placeholder,
+    input {
+      font-size: 1.2rem;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+
+  .team__container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

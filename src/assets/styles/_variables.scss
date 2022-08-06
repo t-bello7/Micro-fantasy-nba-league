@@ -1,17 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&family=Lato:wght@300&display=swap');
+
 :root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-  
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-  
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  }
-  
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --clr-primary: #4369b2;
+  --clr-secondary: #f5f6f7;
+  --ff-duru-sans: 'Duru Sans', sans-serif;
+  --ff-lato: 'Lato', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--ff-lato);
+}
+
+.container {
+  padding-inline: 1.5em;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon:hover {
+  border: 1px solid black;
+}
