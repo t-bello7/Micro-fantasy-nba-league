@@ -7,6 +7,9 @@ The Fantasy NBA league consists of the Home and Detailed Page section built with
 - React
 - Redux
 
+## Live Demo
+[Live Demo Link](https://ubiquitous-hamster-a4bd6e.netlify.app/)
+
 
 ## Getting Started
 
