@@ -17,8 +17,8 @@ export const fetchTeams = createAsyncThunk(
       {
         headers: {
           'Content-type': 'application/json',
-          'X-RapidAPI-Host': import.meta.env.VITE_XRapidAPIHost,
-          'X-RapidAPI-Key': import.meta.env.VITE_XRapidAPIKey
+          'X-RapidAPI-Host': process.env.VITE_XRapidAPIHost,
+          'X-RapidAPI-Key': process.env.VITE_XRapidAPIKey
         },
       });
     return response.data.response;
@@ -32,8 +32,8 @@ export const fetchTeamStatistics = createAsyncThunk(
       {
         headers: {
           'Content-type': 'application/json',
-          'X-RapidAPI-Host': import.meta.env.VITE_XRapidAPIHost,
-          'X-RapidAPI-Key': import.meta.env.VITE_XRapidAPIKey
+          'X-RapidAPI-Host': process.env.VITE_XRapidAPIHost,
+          'X-RapidAPI-Key': process.env.VITE_XRapidAPIKey
         },
       });
     return response.data.response[0];
