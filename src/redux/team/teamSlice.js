@@ -13,7 +13,6 @@ const baseURL = 'https://***REMOVED***/';
 export const fetchTeams = createAsyncThunk(
   'team/fetchTeams',
   async () => {
-    console.log(`hello ${import.meta.env.VITE_XRapidAPIKey}`)
     const response = await axios.get(`${baseURL}teams`,
       {
         headers: {
@@ -30,15 +29,13 @@ export const fetchTeamStatistics = createAsyncThunk(
   'team/fetchTeamStatistics',
   async (id) => {
     const response = await axios.get(`${baseURL}/teams/statistics?season=2020&id=${id}`,
-    {
-      headers: {
-        'Content-type': 'application/json',
-        'X-RapidAPI-Host': import.meta.env.VITE_XRapidAPIHost,
-        'X-RapidAPI-Key': import.meta.env.VITE_XRapidAPIKey
-      },
-    }
-    );
-    console.log(response.data.response[0])
+      {
+        headers: {
+          'Content-type': 'application/json',
+          'X-RapidAPI-Host': import.meta.env.VITE_XRapidAPIHost,
+          'X-RapidAPI-Key': import.meta.env.VITE_XRapidAPIKey
+        },
+      });
     return response.data.response[0];
   }
 );
@@ -63,13 +60,13 @@ const teamSlice = createSlice({
       .addCase(fetchTeamStatistics.pending, (state) => {
         state.status = 'loading';
       })
-      .addCase(fetchTeamStatistics.fulfilled, (state, action)=>{
+      .addCase(fetchTeamStatistics.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.dataStat = action.payload;
       })
-      .addCase(fetchTeamStatistics.rejected, (state)=> {
+      .addCase(fetchTeamStatistics.rejected, (state) => {
         state.status = 'failed';
-      })
+      });
   }
 });
 

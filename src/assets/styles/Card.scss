@@ -1,27 +1,26 @@
 @import "_variables";
 
 .card__container {
-    width: 20ch;
-    height: 20ch;
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-    border-radius: 1.5rem;
-    display: inline-block;
+  width: 20ch;
+  height: 20ch;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  border-radius: 1.5rem;
+  position: relative;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: #000;
+
+  .card__logo {
+    width: 50%;
     position: relative;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    padding: 2rem;
-    text-align: center;
+    left: -30%;
+    top: -10%;
+  }
 
-    .card__logo {
-        width: 50%;
-        position: relative;
-        left: -30%;
-        top: -10%;
-    }
-
-    .card__data {
-        position: relative;
-        top: 30%;
-    }
-
+  .card__data {
+    position: relative;
+    top: 20%;
+  }
 }

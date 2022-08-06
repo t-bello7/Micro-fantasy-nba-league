@@ -1,19 +1,17 @@
 .detail__container {
-    background-color: var(--clr-secondary);
-    height: 100vh;
-}
+  background-color: var(--clr-secondary);
+  height: 100vh;
 
+  & > * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+  }
 
-.detail__container {
-    & > * {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2rem;
-        border-radius: 1.5rem;
-        font-size: 2rem;
-    }
-    & > :nth-child(even){
-        background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-    }
+  & > :nth-child(even) {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  }
 }

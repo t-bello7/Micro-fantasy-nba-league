@@ -1,8 +1,8 @@
 import React from 'react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
+import { act } from 'react-dom/test-utils';
 import { renderWithProviders } from '../utils/test-utils';
-import { act } from 'react-dom/test-utils'
 import Home from '../pages/Home';
 
 const handlers = [
