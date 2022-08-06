@@ -13,7 +13,7 @@ const Home = () => {
   const dispatch = useDispatch();
   const keys = ["name", "nickname", "code", "city"]
   const search = (data) => {
-    return data.filter((item) => item.logo ).filter((item) => keys.some(key => item[key].toLowerCase().includes(query)))
+    return data.filter((item) => item.logo ).filter((item) => keys.some(key => item[key].toLowerCase().includes(query.toLowerCase())))
   } 
   useEffect (() => {
     if (status === 'idle'){
