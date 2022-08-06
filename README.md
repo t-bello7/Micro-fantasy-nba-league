@@ -10,6 +10,9 @@ The Fantasy NBA league consists of the Home and Detailed Page section built with
 ## Live Demo
 [Live Demo Link](https://ubiquitous-hamster-a4bd6e.netlify.app/)
 
+## Demo video
+[Demo Video](https://www.loom.com/share/aa7a5bd262064f0098089e8ef4bec405)
+
 
 ## Getting Started
 
