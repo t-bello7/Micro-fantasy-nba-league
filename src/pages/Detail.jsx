@@ -67,8 +67,7 @@ const Detail = () => {
       <div> <span>Steals </span>{teamStat.steals} </div>
       <div> <span>Blocks </span>{teamStat.blocks} </div>
       <div> <span>Turnovers </span> {teamStat.turnovers} </div>
-      <div> <span>Assits </span>{teamStat.assists} </div>
-      
+      <div> <span>Assits </span>{teamStat.assists} </div>     
     </main>
   )
 }
