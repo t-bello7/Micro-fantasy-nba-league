@@ -8,7 +8,7 @@ const initialState = {
   dataStat: {}
 };
 
-const baseURL = 'https://***REMOVED***/';
+const baseURL = process.env.VITE_NBA_BASEURL;
 
 export const fetchTeams = createAsyncThunk(
   'team/fetchTeams',
