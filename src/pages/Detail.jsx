@@ -14,7 +14,7 @@ const Detail = () => {
   }, [params.name])
 
   return (
-    <main className="container detail__container">
+    <main className="detail__container">
       <div> <span>Games  </span>  {teamStat.games}  </div>
       <div> <span>Fast Break Points </span>  {teamStat.fastBreakPoints} </div>
       <div> <span>Points In Paint </span>  {teamStat.pointsInPaint}  </div>

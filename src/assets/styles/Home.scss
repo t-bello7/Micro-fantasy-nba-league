@@ -34,7 +34,25 @@
 
   .team__container {
     max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+
+    & > * {
+      background-color: hsl(var(--clr-primary));
+    }
+
+    & > :nth-child(4n+2),
+    >:nth-child(4n+3) {
+      background-color: hsl(var(--clr-secondary));
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .home__container {
+    .team__container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 }

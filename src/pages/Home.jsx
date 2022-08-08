@@ -23,7 +23,7 @@ const Home = () => {
 
   teams = search(teams)
   return (
-    <main className='container home__container'>
+    <main className='home__container'>
       <div className='search__container'>
         <input 
             type="text"

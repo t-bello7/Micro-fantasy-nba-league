@@ -51,11 +51,11 @@ This will install all the packages and dependencies used in the project.
 - Go to the (NBA RAPID API)[https://rapidapi.com/api-sports/api/api-nba/] and subscribe to get authentication keys for the NBA API
 - Create a .env file in the project root directory and the enviroment variables with your key 
 
-`
+```
 VITE_NBA_BASEURL=**The NBA API BASE URL**  
 VITE_XRapidAPIKey=**Your RAPID API KEY**
 VITE_XRapidAPIHost=**Your RAPID API HOST**
-`
+```
 - Run the following command to start a live server on your computer
 ```
 yarn dev
