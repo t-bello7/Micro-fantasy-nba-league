@@ -1,0 +1,18 @@
+.detail__container {
+  background-color: var(--clr-secondary);
+  height: 100vh;
+
+  & > * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: hsl(var(--clr-primary));
+    color: #fff;
+  }
+
+  & > :nth-child(even) {
+    background-color: hsl(var(--clr-secondary));
+  }
+}
